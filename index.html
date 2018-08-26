@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/framework.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -14,23 +15,23 @@
 	<div class="bg-green">
 		<div class="wrapper row">
 			<div class="col-1-4">
-				<p>Campus Money</p>
+				<h1>Campus Money</h1>
 			</div>
-			<div class="col-1-3 push-right">
-				<nav>
-					<ul>
-						<li><a>Solutions</a></li>
-						<li><a>About</a></li>
-						<li><a>Why</a></li>
-						<li><a>Contact</a></li>
-					</ul>
-				</nav>
-			</div>
+			<nav class="col-1-3 push-right">
+				<ul>
+					<li><a href="#solutions">Solutions</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#why">Why</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 		</div>	
 	</div>
-	<div id="bg-image"><!-- this is where the image and the color over lay will sit. --->
-		<h1>We provide solutions to process payments and manage funds.</h1>
-		<p>We have 8 different solutions for managing online bill pay, automatic payments, refunds, and a variety of other payment options.</p>
+	<div id="bg-image"><!-- this is where the image and the color over lay will sit. -->
+		<div class="wrapper col-1-5">
+			<p>We provide solutions to process payments and manage funds.</p>
+			<p>We have 8 different solutions for managing online bill pay, automatic payments, refunds, and a variety of other payment options.</p>
+		</div>
 	</div>
 </header>	
 <section class="wrapper" id="services">
@@ -119,25 +120,25 @@
 </section>
 <section class="wrapper">
 	<header>
-		<h2></h2>
+		<h2>Why Choose Us</h2>
 	</header>
 	<div class="row">
 		<section class="col-1-3">
-			<img src="" alt="">
+			<i class="fas fa-handshake"></i>
 			<header>
 				<h3>Industry Partnerships</h3>
 			</header>
 			<p>Over 100 integrations with vendors already on your campus.</p>
 		</section>
 		<section class="col-1-3">
-			<img src="" alt="">
+			<i class="fas fa-lock"></i>
 			<header>
 				<h3>Secure</h3>
 			</header>
 			<p>Business Solutions is PCI Level 1 Validated, and SSAE 16 Audited.</p>
 		</section>
 		<section class="col-1-3">
-			<img src="" alt="">
+			<i class="fas fa-clipboard-list"></i>
 			<header>
 				<h3>Comprehensive</h3>
 			</header>
@@ -146,21 +147,21 @@
 	</div>
 	<div class="row">
 		<section class="col-1-3">
-			<img src="" alt="">
+			<i class="fas fa-sun"></i>
 			<header>
 				<h3>Vibrant</h3>
 			</header>
 			<p>Part of the Business family of companies. Diversified, stable, forward-thinking.</p>
 		</section>
 		<section class="col-1-3">
-			<img src="" alt="">
+			<i class="fas fa-clipboard-check"></i>
 			<header>
 				<h3>Integrated</h3>
 			</header>
 			<p>PeopleSoft Campus Solutions validated, Ellucian Community Partner, Jenzabar approved.</p>
 		</section>
 		<section class="col-1-3">
-			<img src="" alt="">
+			<i class="fas fa-globe"></i>
 			<header>
 				<h3>Service-Oriented</h3>
 			</header>
@@ -168,27 +169,9 @@
 		</section>
 	</div>
 </section>
-<footer id="bg-black">
+<footer><!--target this directly and make it black -->
 	<div class="wrapper">
-		<header>
-			<h2>Upcoming Conferences</h2>
-		</header>
-		<section class="col-1-3 row">
-			<section>
-				<header>
-					<h3>Name of Confernece</h3>
-				</header>
-				<p>Aug. 23rd</p>
-				<p>Description of conference lorem ipsum</p>
-			</section>
-			<section>
-				<header>
-					<h3>Name of Conference</h3>
-				</header>
-				<p>Sept. 7th</p>
-				<p>Description of conference lorem ipsum</p>
-			</section>
-		</section><!-- finish the upcoming events-->
+		<h2>Contact Us</h2>
 		<div class="row">
 			<section class="col-1-2">
 				<form>
@@ -197,7 +180,7 @@
 					<p>Check all services That you are interested in</p>
 					<label for="ebill">eBill and ePay</label>
 					<input id="ebill" type="checkbox" name="ebill">
-					<label for="Payment">Payment Plans</label>
+					<label for="payment">Payment Plans</label>
 					<input id="payment" type="checkbox" name="payment">
 					<label for="refunds">Student Refunds</label>
 					<input id="refunds" type="checkbox" name="refunds">
@@ -215,18 +198,34 @@
 			</section>
 			<section class="col-1-2 push-right">
 				<form>
-					<label>Last Name</label>
-					<input>
-					<label>Email</label>
-					<input>
+					<label for="last-name">Last Name</label>
+					<input id="last-name" type="type" name="last-name">
+					<label for="email">Email</label>
+					<input id="email" type="email" name="email">
 					<p>Message</p>
 					<textarea></textarea>
 				</form>
-				<p><a>Submit</a></p>
+				<p><a href="#">Submit</a></p>
 			</section>
 		</div>
-		<section class="col-1-3">
-			<!-- add the social media-->
+		<h3>Upcoming Conferences</h3>
+		<section class="col-1-3 row">
+			<section>
+				<h4>Name of Confernece</h4>
+				<p>Aug. 23rd</p>
+				<p>Description of conference lorem ipsum</p>
+			</section>
+			<section>
+				<h4>Name of Conference</h4>
+				<p>Sept. 7th</p>
+				<p>Description of conference lorem ipsum</p>
+			</section>
+		</section>
+		
+		<section class="col-1-3 push-right">
+			<i class="fab fa-twitter"></i>
+			<i class="fab fa-facebook-f"></i>
+			<i class="fab fa-instagram"></i>
 		</section>
 	</div>
 </footer>

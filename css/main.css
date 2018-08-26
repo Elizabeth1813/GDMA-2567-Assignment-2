@@ -40,25 +40,90 @@
 /*--------------------------------------------------------------
 1.0 - Typography
 -------------------------------------------------------------- */
+html{
+	font-size: 14px;
+}
+/* 1.1 headings */
+/*--------------------------------------------------------------
+2.0 - Navigation Menus
+-------------------------------------------------------------- */
+nav ul li{
+	display: inline-block;
+	padding: 10px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+}
 
-
-
-
-
+/*--------------------------------------------------------------
+3.0 - Content
+-------------------------------------------------------------- */
+.col-1-5{
+	margin: 0 auto;
+}
+.fa-facebook-f, .fa-instagram, .fa-twitter{
+	padding: 10px;
+}
+/*--------------------------------------------------------------
+4.0 - media
+-------------------------------------------------------------- */
+#bg-image{
+	background: url(../img/bg-images.jpg) no-repeat; 
+}
 
 /*--------------------------------------------------------------
 5.0 - utility
 -------------------------------------------------------------- */
+/* 5.1 background colors */
+footer{
+	background-color: #000;
+	padding-bottom: 100px;
+	
+}
+.bg-green{
+	background-color: #7cc242;
+}
+/* 5.2 text-colors */
+.fa-facebook-f, .fa-twitter, .fa-instagram, footer, .bg-green{
+	color: #fff;
+}
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover{
+	color: #7cc242;
+}
+/* 5.3 font sizes */
+h1{
+	font-size: 1rem;
+}
+.fa-clipboard-check, .fa-clipboard-list, .fa-globe, .fa-handshake, .fa-lock, .fa-sun, .fa-facebook-f, .fa-instagram, .fa-twitter{
+	font-size: 2rem;
+}
 /* 5.4 alignments */
 .push-right{
 	float: right;
+}
+h2, h3, p, h4, .fa-clipboard-check, .fa-clipboard-list, .fa-globe, .fa-handshake, .fa-lock, .fa-sun{
+	text-align: center;
+}
+footer h3{
+	text-align: left;
 }
 /*--------------------------------------------------------------
 6.0 - media queries
 -------------------------------------------------------------- */
 @media screen and (min-width: 480px){
-	
+	.wrapper{
+		width: 95%;
+	}
+	.fa-facebook-f, .fa-instagram, .fa-twitter{
+		text-align: center;
+	}
 }
 @media screen and (max-width: 480px){
-	
+	.wrapper, .col-1-3, .col-1-2, .col-1-4, .col-1-5{
+		width: 100%;
+	}
+	footer h3, h4, .fa-facebook-f, .fa-instagram, .fa-twitter{
+		text-align: center;
+	}
 }
