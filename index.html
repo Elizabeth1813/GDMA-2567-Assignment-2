@@ -10,6 +10,7 @@
 <title>Assignment 2</title>
 </head>
 
+
 <body>
 <header>
 	<div class="bg-green">
@@ -19,9 +20,9 @@
 			</div>
 			<nav class="col-1-3 push-right">
 				<ul>
-					<li><a href="#solutions">Solutions</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#why">Why</a></li>
+					<li><a href="#services">Solutions</a></li>
+					<li><a href="#aboutus">About</a></li>
+					<li><a href="#chooseus">Why</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -38,60 +39,62 @@
 	<header>
 		<h2>Services</h2>
 	</header>
-	<div class="row">
-		<section class="col-1-4">
-			<header>
-				<h3>eBill &amp; ePay</h3>
-			</header>
-			<p>Save money, increase cash flow, and improve service to students by presenting bills electronically and allowing online payments in a PCI Level 1 compliant environment.</p>
-		</section>
-		<section class="col-1-4">
-			<header>
-				<h3>Actively Mangaged Payment Plans</h3>
-			</header>
-			<p>Increase affordability, reduce administrative burdens, and improve access by allowing students to budget tuition and fee payments according to a schedule defined by your institution.</p>
-		</section>
-		<section class="col-1-4">
-			<header>
-				<h3>Student Choice Refunds</h3>
-			</header>
-			<p>Offer an alternative refund method that limits fee exposure to students, promotes choice, and protects your institution from increased scrutiny surrounding refunds disbursement.</p>
-		</section>
-		<section class="col-1-4">
-			<header>
-				<h3>eStore</h3>
-			</header>
-			<p>Sell goods, process event registrations, and solicit donations – all within a single, self-service web store with shopping cart functionality, inventory management, and more.</p>
-		</section>
-	</div>
-	<div class="row">
-		<section class="col-1-4">
-			<header>
-				<h3>Cashiering</h3>
-			</header>
-			<p>Integrate in-person payments into your online payment gateway, streamline the process at the cashier’s window, and automate the manual tasks associated with departmental deposits.</p>
-		</section>
-		<section class="col-1-4">
-			<header>
-				<h3>Hosted Payments</h3>
-			</header>
-			<p>Allow departments across campus to securely accept credit/debit card or ACH payments without capturing or storing card information, keeping your institution secure and compliant.</p>
-		</section>
-		<section class="col-1-4">
-			<header>
-				<h3>Sponsored Payments</h3>
-			</header>
-			<p>Offer an electronic payment gateway to corporations or organizations that wish to sponsor students by paying part or all of their tuition and fees.</p>
-		</section>
-		<section class="col-1-4">
-			<header>
-				<h3>Refunds</h3>
-			</header>
-			<p>Offer an electronic payment gateway to corporations or organizations that wish to sponsor students by paying part or all of their tuition and fees.</p>
-		</section>
+	<div id="accordion">
+		<div class="row">
+			<section class="col-1-4">
+					<h3 class="accordion-toggle">eBill &amp; ePay</h3>
+				<div class="accordion-content default">
+					<p>Save money, increase cash flow, and improve service to students by presenting bills electronically and allowing online payments in a PCI Level 1 compliant environment.</p>
+				</div>
+			</section>
+			<section class="col-1-4">
+					<h3 class="accordion-toggle">Actively Mangaged Payment Plans</h3>
+				<div class="accordion-content">
+					<p>Increase affordability, reduce administrative burdens, and improve access by allowing students to budget tuition and fee payments according to a schedule defined by your institution.</p>
+				</div>
+			</section>
+			<section class="col-1-4">
+					<h3 class="accordion-toggle">Student Choice Refunds</h3>
+				<div class="accordion-content">
+					<p>Offer an alternative refund method that limits fee exposure to students, promotes choice, and protects your institution from increased scrutiny surrounding refunds disbursement.</p>
+				</div>
+			</section>
+			<section class="col-1-4">
+					<h3 class="accordion-toggle">eStore</h3>
+				<div class="accordion-content">
+					<p>Sell goods, process event registrations, and solicit donations – all within a single, self-service web store with shopping cart functionality, inventory management, and more.</p>
+				</div>
+			</section>
+		</div>
+		<div class="row">
+			<section class="col-1-4">
+				<h3 class="accordion-toggle">Cashiering</h3>
+				<div class="accordion-content">
+					<p>Integrate in-person payments into your online payment gateway, streamline the process at the cashier’s window, and automate the manual tasks associated with departmental deposits.</p>
+				</div>
+			</section>
+			<section class="col-1-4">
+					<h3 class="accordion-toggle">Hosted Payments</h3>
+				<div class="accordion-content">
+					<p>Allow departments across campus to securely accept credit/debit card or ACH payments without capturing or storing card information, keeping your institution secure and compliant.</p>
+				</div>
+			</section>
+			<section class="col-1-4">
+					<h3 class="accordion-toggle">Sponsored Payments</h3>
+				<div class="accordion-content">
+					<p>Offer an electronic payment gateway to corporations or organizations that wish to sponsor students by paying part or all of their tuition and fees.</p>
+				</div>
+			</section>
+			<section class="col-1-4">
+					<h3 class="accordion-toggle">Refunds</h3>
+				<div class="accordion-content">
+					<p>Offer an electronic payment gateway to corporations or organizations that wish to sponsor students by paying part or all of their tuition and fees.</p>
+				</div>
+			</section>
+		</div>
 	</div>
 </section>
-<section class="bg-green">
+<section class="bg-green" id="aboutus">
 	<div class="wrapper">
 		<header>
 			<h2>About Us</h2>
@@ -118,7 +121,7 @@
 		</div>
 	</div>	
 </section>
-<section class="wrapper">
+<section class="wrapper" id="chooseus">
 	<header>
 		<h2>Why Choose Us</h2>
 	</header>
@@ -169,7 +172,7 @@
 		</section>
 	</div>
 </section>
-<footer><!--target this directly and make it black -->
+<footer id="contact"><!--target this directly and make it black -->
 	<div class="wrapper">
 		<h2>Contact Us</h2>
 		<div class="row">
@@ -200,35 +203,51 @@
 				<form>
 					<label for="last-name">Last Name</label>
 					<input id="last-name" type="type" name="last-name">
+					<br>
 					<label for="email">Email</label>
 					<input id="email" type="email" name="email">
 					<p>Message</p>
 					<textarea></textarea>
 				</form>
-				<p><a href="#">Submit</a></p>
+				<p><a id="btn" href="#">Submit</a></p>
 			</section>
 		</div>
 		<h3>Upcoming Conferences</h3>
-		<section class="col-1-3 row">
-			<section>
+		<section class="row">
+			<section class="col-1-3">
 				<h4>Name of Confernece</h4>
 				<p>Aug. 23rd</p>
 				<p>Description of conference lorem ipsum</p>
 			</section>
-			<section>
+			<section class="col-1-4">
 				<h4>Name of Conference</h4>
 				<p>Sept. 7th</p>
 				<p>Description of conference lorem ipsum</p>
 			</section>
+			<section class="col-1-3 push-right">
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-instagram"></i>
+		</section>
 		</section>
 		
-		<section class="col-1-3 push-right">
-			<i class="fab fa-twitter"></i>
-			<i class="fab fa-facebook-f"></i>
-			<i class="fab fa-instagram"></i>
-		</section>
 	</div>
 </footer>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function($) {
+    $('#accordion').find('.accordion-toggle').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+
+      //Hide the other panels
+      $(".accordion-content").not($(this).next()).slideUp('fast');
+
+    });
+  });
+</script>
 	
 </body>
 </html>
